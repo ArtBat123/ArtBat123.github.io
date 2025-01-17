@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('./variables/base.scss');
+
+@layer reset,primereact,base;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@layer base {
+
+  body {
+    height: 100vh;
+    background-color: var(--gray-50);
+    color: var(--gray-700);
+    font-family: 'JetBrains Mono', sans-serif;
+  }
+  #root {
+    height: inherit;
+  }
+
+  :root {
+    --header-height: 60px;
+  }
+}
+
+*{
+  color: var(--gray-700);
+  text-decoration: none;
+}
+

@@ -1,0 +1,1 @@
+import{u as p,l as e}from"./index-BbHPmgEB.js";import{_ as m}from"./data-BnJ9Vx5K.js";const c=()=>{const{lg:s}=p(),{mainResponseRu:a,mainResponseEng:n,referatResponseRu:o,referatResponseEng:r}=m,t=s===e.RU?a:n,R=s===e.RU?o:r;return{mainResponse:t,referatResponse:R}};export{c as u};

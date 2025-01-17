@@ -1,0 +1,55 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-gutter: stable;
+
+  &::-webkit-scrollbar {
+    width: 8px; /* ширина scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-background-stroke);
+    border-radius: 6px;
+  }
+}
+
+.app-page {
+  flex: 1;
+  max-width: 1000px;
+  z-index: 2;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 32px;
+  font-style: italic;
+}
+
+.app-header {
+  padding: 20px 80px 20px 20px;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--gray-200);
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  font-size: var(--font-size-caption1);
+}

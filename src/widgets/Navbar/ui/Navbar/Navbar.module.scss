@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  overflow: auto;
+  justify-content: center;
+}
+
+.nav a {
+  text-wrap: nowrap;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.burger-menu-icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+@media (max-width: 905px) {
+  .nav {
+    display: none;
+  }
+  .burger-menu-icon {
+    display: inline;
+  }
+}
